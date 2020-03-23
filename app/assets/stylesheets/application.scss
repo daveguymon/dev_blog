@@ -17,6 +17,7 @@
 
  $black: #212428;
  $comp_green: #00FF01;
+ $hacker_yellow: #f5ec42;
 // BODY START
 body {
     font-family: 'IBM Plex Mono', monospace;
@@ -27,6 +28,14 @@ body {
     a {
         color: $black;
         text-decoration: none;
+
+        &:hover {
+            background-color: $hacker_yellow;
+        }
+    }
+    h1:hover {
+        width: fit-content;
+        background-color: $hacker_yellow;
     }
 }
 // BODY END
@@ -52,6 +61,9 @@ body {
         list-style: none;
         li {
             margin: 0px 5px;
+        }
+        a:hover {
+            background-color: $comp_green;
         }
     }
 }
@@ -81,11 +93,11 @@ body {
 // FORM END
 
 // INDEX VIEW START
-    .post-item-wrapper {
-        width: 100%;
-        height: 250px;
-        border-bottom: solid $black 2px;
-    }
+.post-item-wrapper {
+    width: 100%;
+    height: 250px;
+    border-bottom: solid $black 2px;
+}
 // INDEX VIEW END
 
 // FOOTER START
