@@ -64,6 +64,7 @@ body {
 
 // FORM START
 .form-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 15px;
@@ -75,7 +76,6 @@ body {
     textarea {
         overflow: auto;
         height: 250px;
-        width: 100%;
     }
 }
 // FORM END

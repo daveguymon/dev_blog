@@ -1,0 +1,11 @@
+<div class="page-wrapper">
+    <%= form_with model: @post, class: "form-wrapper" do |f| %>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+
+        <%= f.label :content %>
+        <%= f.text_area :content %>
+
+        <%= f.submit %>
+    <% end %>
+</div>
