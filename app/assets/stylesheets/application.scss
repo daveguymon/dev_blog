@@ -62,6 +62,24 @@ body {
     height: auto;
 }
 
+// FORM START
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    input, textarea {
+        margin: 10px 0px;
+    }
+
+    textarea {
+        overflow: auto;
+        height: 250px;
+        width: 100%;
+    }
+}
+// FORM END
+
 // INDEX VIEW START
     .post-item-wrapper {
         width: 100%;
