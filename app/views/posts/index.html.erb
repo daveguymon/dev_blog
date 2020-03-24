@@ -3,7 +3,7 @@
         <div class="post-item-wrapper">
             <h1><%= link_to post.title, post_path(post.id) %></h1>
             <p><%= post.created_at.strftime("%B, %d, %Y")%></p>
-            <p><%= truncate(post.content, length: 450) { link_to "(continue)", post_path(post.id) } %></p>
+            <p><%= truncate(markdown(post.content), length: 450, escape: false) { link_to "(continue)", post_path(post.id) } %>
         </div>
     <% end %>
 </div>

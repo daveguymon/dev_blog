@@ -18,6 +18,8 @@
  $black: #212428;
  $comp_green: #00FF01;
  $hacker_yellow: #f5ec42;
+
+
 // BODY START
 body {
     font-family: 'IBM Plex Mono', monospace;
@@ -95,13 +97,14 @@ body {
 // INDEX VIEW START
 .post-item-wrapper {
     width: 100%;
-    height: 250px;
+    min-height: 250px;
     border-bottom: solid $black 2px;
 }
 // INDEX VIEW END
 
 // FOOTER START
 .footer-wrapper {
+    position: absolute;
     bottom:0px;
     width: 100%;
     height: 50px;
