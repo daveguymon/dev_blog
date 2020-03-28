@@ -1,4 +1,7 @@
 <div class="page-wrapper">
+
+    <h2><%= title %> post</h2>
+
     <%= form_with model: @post, class: "form-wrapper" do |f| %>
         <%= f.label :title %>
         <%= f.text_field :title %>
