@@ -2,7 +2,7 @@ class PostsController < ApplicationController
     before_action :authenticate_user!, :except => [:index, :show]
 
     def index
-        @posts = Post.all.order('created_at DESC')
+        @posts = Post.search(params[:search]).order('created_at DESC')
     end
 
     def show
@@ -47,6 +47,6 @@ class PostsController < ApplicationController
 
 private
     def post_params
-        params.require(:post).permit(:title, :content)
+        params.require(:post).permit(:title, :content, :search)
     end
 end
