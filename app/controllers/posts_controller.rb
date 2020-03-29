@@ -2,7 +2,7 @@ class PostsController < ApplicationController
     before_action :authenticate_user!, :except => [:index, :show]
 
     def index
-        @posts = Post.search(params[:search]).order('created_at DESC')
+        @posts = Post.search(params[:search]).order('created_at DESC').paginate(:page => params[:page], :per_page => 7)
     end
 
     def show

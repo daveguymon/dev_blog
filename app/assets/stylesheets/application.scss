@@ -154,3 +154,50 @@ body {
     }
 }
 // FOOTER END
+.pagination {
+    background: white;
+    cursor: default;
+    height: 22px;
+    margin-bottom: 55px;
+    a,
+    span,
+    em {
+      padding: 0.2em 0.5em;
+      display: block;
+      float: left;
+      margin-right: 1px;
+    }
+    .disabled {
+      display: none;
+    }
+    .current {
+      font-style: normal;
+      font-weight: bold;
+      background: lightgray;
+      color: white;
+      border: 1px solid lightgray;
+    }
+    a {
+      text-decoration: none;
+      color: lightgray;
+      border: 1px solid lightgray;
+      &:hover,
+      &:focus {
+        color: black;
+        border-color: black;
+      }
+    }
+    .page_info {
+      background: gray;
+      color: white;
+      padding: 0.4em 0.6em;
+      width: 22em;
+      margin-bottom: 0.3em;
+      text-align: center;
+      b {
+        color: black;
+        background: lightgray + 60;
+        padding: 0.1em 0.25em;
+      }
+    }
+  }

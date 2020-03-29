@@ -1,4 +1,5 @@
 <div class="page-wrapper">
+<%= will_paginate @posts %>
     <% @posts.each do |post| %>
         <div class="post-item-wrapper">
             <h1><%= link_to post.title, post_path(post.id) %></h1>

@@ -13,6 +13,7 @@ gem 'redcarpet'
 gem 'rouge-rails'
 # Devise is a flexible authentication solution for Rails based on Warden.
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
