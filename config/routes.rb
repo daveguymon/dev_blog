@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   root "posts#index"
 
   resources :posts
+  resources :users do
+    post :is_admin, on: :member
+  end
 end
